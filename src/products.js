@@ -5,6 +5,7 @@ function Products() {
     <>
       <Product name="apple" price="25000" url="" />
       <Product name="lava" price="5000" url="" />
+      <Product name="samsung" price="3500" url="" />
     </>
   );
 }

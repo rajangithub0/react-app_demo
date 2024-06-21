@@ -34,3 +34,7 @@ div {
   width: fit-content;
   margin: 10px;
 }
+
+.btn-sub {
+  background-color: transparent;
+}

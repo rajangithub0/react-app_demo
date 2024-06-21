@@ -4,15 +4,16 @@ import Products from "./products";
 import { useState } from "react";
 
 function App() {
-  let [name1, setName1] = useState("rajan");
-
-  function changedata() {
-    setName("monika");
-    console.log(name);
-  }
+  //let name ="rajan" // this is normal variable.
+  let [name1, setName1] = useState("rajan"); //this is state variable use in function first line
 
   let [name, setName] = useState();
   let [age, setAge] = useState();
+  function changedata() {
+    // this function is display the value which is passed in the function shown when clicked the button
+    setName("monika");
+    setAge(26);
+  }
 
   let countries = [
     {
@@ -34,6 +35,8 @@ function App() {
   ];
   return (
     <>
+      <h2>{name1}</h2>
+      {/* on butto clicked the value passed in the state function data is display */}
       {countries.map((country, index) => {
         return (
           <div className="data" key={index}>
@@ -43,8 +46,7 @@ function App() {
         );
       })}
       {/*  */}
-      <h2>{name1}</h2>
-      <button onClick={changedata}>click</button>
+      {<br></br>}
       <div className="products">
         <Header />
         <Products />
@@ -53,8 +55,7 @@ function App() {
         <h1>Shopping Mart</h1>
       </div>{" "}
       {<h2>name </h2>}
-      {<h3>{name}</h3>}
-      {/* { <input
+      <input
         type="text"
         placeholder="enter name"
         onChange={(event) => {
@@ -68,15 +69,19 @@ function App() {
           setAge(event.target.value);
         }}
       />
-
       <button
         type="button"
         onClick={() => {
-          console.log(name, age);
+          console.log(name, age); // display this value enter input filed shown in console when click oh this button
         }}
       >
         submit
-      </button> } */}
+      </button>
+      <button onClick={changedata} className="btn-sub">
+        click
+      </button>
+      {<h3>{name}</h3>}
+      {<h3>{age}</h3>}{" "}
     </>
   );
 }
