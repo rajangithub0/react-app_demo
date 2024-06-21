@@ -4,15 +4,15 @@ import Products from "./products";
 import { useState } from "react";
 
 function App() {
-  // let [name1, setName1] = useState("rajan");
+  let [name1, setName1] = useState("rajan");
 
-  // function changedata() {
-  //   setName("monika");
-  //   console.log(name);
-  // }
+  function changedata() {
+    setName("monika");
+    console.log(name);
+  }
 
-  // let [name, setName] = useState();
-  // let [age, setAge] = useState();
+  let [name, setName] = useState();
+  let [age, setAge] = useState();
 
   let countries = [
     {
@@ -27,6 +27,10 @@ function App() {
       name: "chaina",
       captial: "chin-cin",
     },
+    {
+      name: "dubai",
+      captial: "abu-dubai",
+    },
   ];
   return (
     <>
@@ -39,19 +43,18 @@ function App() {
         );
       })}
       {/*  */}
-      {/* <h2>{name1}</h2>
-        <button onClick={changedata}>click</button> */}
-      {/* <div className="products">
-          <Header />
-          <Products />
-        </div><div className="App">
+      <h2>{name1}</h2>
+      <button onClick={changedata}>click</button>
+      <div className="products">
+        <Header />
+        <Products />
+      </div>
+      <div className="App">
         <h1>Shopping Mart</h1>
-      </div> */}
-
-      {/* <h2>name </h2> */}
-      {/* <h3>{name}</h3> */}
-
-      {/* <input
+      </div>{" "}
+      {<h2>name </h2>}
+      {<h3>{name}</h3>}
+      {/* { <input
         type="text"
         placeholder="enter name"
         onChange={(event) => {
@@ -73,7 +76,7 @@ function App() {
         }}
       >
         submit
-      </button> */}
+      </button> } */}
     </>
   );
 }
