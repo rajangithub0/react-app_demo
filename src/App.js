@@ -19,15 +19,7 @@ function App() {
     {
       name: "india",
       captial: "New Delhi",
-    },
-    {
-      name: "new zealand",
-      captial: "wellington",
-    },
-    {
-      name: "chaina",
-      captial: "chin-cin",
-    },
+    }, 
     {
       name: "dubai",
       captial: "abu-dubai",
