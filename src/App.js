@@ -23,6 +23,20 @@ function App() {
     {
       name: "dubai",
       captial: "abu-dubai",
+    },{
+      name: "india",
+      captial: "New Delhi",
+    }, 
+    {
+      name: "dubai",
+      captial: "abu-dubai",
+    }, {
+      name: "india",
+      captial: "New Delhi",
+    }, 
+    {
+      name: "dubai",
+      captial: "abu-dubai",
     },
   ];
   return (
